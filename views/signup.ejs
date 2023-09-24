@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-container {
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .signup-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-field {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .animated-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Define the animation when hovered */
+        .animated-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1); /* Scale up by 10% */
+        }
+        .signup-button {
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-button:hover {
+            background-color: #ff3333; /* Lighter red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-header">Sign Up</div>
+        <form method="POST" action="/signup" class="signup-form">
+            <input class="input-field" type="text" name="username" placeholder="Full Name">
+            <input class="input-field" type="email" name="email" placeholder="Email">
+            <input class="input-field" type="password" name="pass" placeholder="Password">
+            <input class="input-field" type="password" name="confirmepass" placeholder="Confirm Password">
+            <button class="animated-button" type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

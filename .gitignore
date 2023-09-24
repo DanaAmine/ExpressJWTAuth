@@ -1,0 +1,16 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore environment-specific configuration files
+.env
+
+# Ignore log files and generated coverage reports
+*.log
+coverage/
+
+# Ignore npm's debug log file
+npm-debug.log*
+
+# Ignore user-specific files
+.npmrc
+.npmignore
